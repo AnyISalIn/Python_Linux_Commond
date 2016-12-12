@@ -9,10 +9,14 @@ $ python pycat.py --help
 Usage: pycat.py [options] [filename, ...]
 
 Options:
-      --version     show program's version number and exit
+      --version     show program version number and exit
       -h, --help    show this help message and exit
       -n, --number  show line numbers
 
+```
+
+```shell
+# 打开一个文件
 $ python pycat.py testfile
 {
         "auth": "admin",
@@ -20,6 +24,19 @@ $ python pycat.py testfile
 
 }
 
+#打开多个文件
+
+$ python pycat.py ~/num.txt ~/person.json ~/hello.rb
+1 2 3 4
+{
+        "auth": "admin",
+        "password": "passwd"
+
+}
+#!/usr/bin/ruby
+puts "Hello World";
+
+# 显示行号
 $ python pycat.py -n testfile
 1 {
 2     "auth": "admin",
