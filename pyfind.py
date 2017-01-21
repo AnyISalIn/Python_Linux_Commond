@@ -4,7 +4,7 @@ import sys
 from optparse import OptionParser
 import stat
 
-parser = OptionParser(usage="usage: %prog [options] [path, ...]",
+parser = OptionParser(usage="usage: %prog [path, ...] [option]",
                       version="%prog 1.0")
 parser.add_option("-t", "--type",
                   action="store",
